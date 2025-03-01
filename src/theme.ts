@@ -10,12 +10,13 @@ export const colors = {
   green300: "#218380",
 
   yellow100: "#EAF2D7",
-  yellow200: "#F4E4BA",
+  yellow200: "#FDE9A2",
   yellow300: "#FBB13C",
 
   salmon100: "#E5A9A9",
   salmon200: "#FFA69E",
-  salmon300: "#EE9293",
+  salmon300: "#F4A261",
+  salmon400: "#D97D54",
 
   pink100: "#EFCFE3",
   pink200: "#EA9AB2",

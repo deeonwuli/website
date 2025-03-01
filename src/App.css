@@ -1,5 +1,5 @@
 #root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -16,3 +16,53 @@ body, * {
   padding: 0;
 }
 
+h1, h2, h3 {
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: DM Sans, sans-serif;
+}
+
+h1 {
+  font-size: 3.125rem;
+}
+
+h2 {
+  font-size: 2.8125rem;
+}
+
+h3 {
+  font-size: 1.5625rem;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+input, textarea, button, a {
+  all: unset;
+  
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+button {
+  width: max-content;
+  padding: 0.75rem 2.5rem;
+  border: none;
+  border-radius: 1.875rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.125rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+a {
+  cursor: pointer;
+}
