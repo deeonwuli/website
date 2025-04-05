@@ -16,8 +16,8 @@ const StyledFooter = styled.footer`
   align-items: center;
   width: 100%;
   padding: 1rem 0;
-  background-color: ${(props) => props.theme.palette.common.salmon400};
-  color: ${(props) => props.theme.palette.common.white};
+  background-color: ${(props) => props.theme.palette.common.pink200};
+  color: ${(props) => props.theme.palette.common.black};
 
   p {
     font-size: 0.75rem;

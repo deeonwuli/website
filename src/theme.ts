@@ -6,7 +6,7 @@ export const colors = {
   grey: "#e0e0e0",
 
   green100: "#DDFFF7",
-  green200: "#9DF7E5",
+  green200: "#A3F4D7",
   green300: "#218380",
 
   yellow100: "#EAF2D7",
@@ -19,7 +19,7 @@ export const colors = {
   salmon400: "#D97D54",
 
   pink100: "#EFCFE3",
-  pink200: "#EA9AB2",
+  pink200: "#F4A3C0",
   pink300: "#E27396",
   pink400: "#D81159",
 

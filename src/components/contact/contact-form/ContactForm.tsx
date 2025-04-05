@@ -85,9 +85,15 @@ const StyledForm = styled.form`
   gap: 3rem;
   width: 75%;
   margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
 `;
 
 const StyledButton = styled.button`
-  background-color: ${(props) => props.theme.palette.common.salmon300};
-  color: ${(props) => props.theme.palette.common.white};
+  background-color: ${(props) => props.theme.palette.common.green200};
+  color: ${(props) => props.theme.palette.common.black};
 `;

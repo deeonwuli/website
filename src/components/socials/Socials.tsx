@@ -39,4 +39,9 @@ const Container = styled.section`
   align-items: center;
   gap: 8rem;
   padding: 10rem 0;
+
+  @media (max-width: 768px) {
+    gap: 4rem;
+    padding: 4rem 0;
+  }
 `;

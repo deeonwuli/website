@@ -28,4 +28,9 @@ const StyledNav = styled.nav`
     font-size: 1rem;
     font-weight: 500;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: space-around;
+  }
 `;

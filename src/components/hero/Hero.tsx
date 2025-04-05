@@ -34,12 +34,22 @@ const HeroSection = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const StyledArrowIcon = styled.img`
   position: absolute;
   left: 45%;
   top: 120px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const HeroText = styled.div`
@@ -47,12 +57,27 @@ const HeroText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    text-align: left;
+  }
 `;
 
 const StyledHeroImage = styled.img`
   width: 40%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 const StyledHeaderText = styled.h1`
   width: 60ch;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    text-align: left;
+  }
 `;

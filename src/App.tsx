@@ -25,4 +25,8 @@ const Container = styled.div`
   background-color: ${(props) => props.theme.palette.common.yellow200};
   padding: 1rem 8rem 0;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding: 1rem 2rem 0;
+  }
 `;

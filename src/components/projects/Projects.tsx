@@ -32,7 +32,9 @@ export default function Projects() {
             <StyledProjectText>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
+              <StyledButton hideOnLargeScreens={true}>View</StyledButton>
             </StyledProjectText>
+
             <StyledDiv>
               <div
                 style={{
@@ -42,7 +44,7 @@ export default function Projects() {
                   borderRadius: "1rem",
                 }}
               />
-              <StyledButton>View</StyledButton>
+              <StyledButton hideOnSmallScreens={true}>View</StyledButton>
             </StyledDiv>
           </StyledProject>
         ))}
@@ -65,6 +67,11 @@ const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12rem;
+
+  @media (max-width: 768px) {
+    gap: 4rem;
+    margin: 2rem 0;
+  }
 `;
 
 const StyledProject = styled.div<{ reverse?: boolean }>`
@@ -74,6 +81,12 @@ const StyledProject = styled.div<{ reverse?: boolean }>`
   align-items: center;
   gap: 2rem;
   height: 24rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    height: auto;
+  }
 `;
 
 const StyledProjectText = styled.div`
@@ -81,6 +94,10 @@ const StyledProjectText = styled.div`
   flex-direction: column;
   gap: 1rem;
   width: 50%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const StyledDiv = styled.div`
@@ -90,9 +107,22 @@ const StyledDiv = styled.div`
   flex-direction: column;
   width: 50%;
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
-const StyledButton = styled.button`
-  background-color: ${(props) => props.theme.palette.common.salmon300};
-  color: ${(props) => props.theme.palette.common.white};
+const StyledButton = styled.button<{
+  hideOnSmallScreens?: boolean;
+  hideOnLargeScreens?: boolean;
+}>`
+  background-color: ${(props) => props.theme.palette.common.green200};
+  color: ${(props) => props.theme.palette.common.black};
+  display: ${(props) => (props.hideOnLargeScreens ? "none" : "flex")};
+
+  @media (max-width: 768px) {
+    display: ${(props) => (props.hideOnSmallScreens ? "none" : "flex")};
+    margin-top: 1rem;
+  }
 `;
