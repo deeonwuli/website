@@ -4,7 +4,7 @@ import ContactForm from "./contact-form/ContactForm";
 export default function ContactMe() {
   return (
     <Container id="contact">
-      <h2>Contact me</h2>
+      <StyledText>Contact me</StyledText>
       <ContactForm />
     </Container>
   );
@@ -17,4 +17,8 @@ const Container = styled.section`
   flex-direction: column;
   gap: 4rem;
   padding: 2rem 0;
+`;
+
+const StyledText = styled.h2`
+  z-index: 1;
 `;

@@ -26,7 +26,7 @@ export default function Socials() {
     <Container>
       {socialLinks.map((socialLink) => (
         <a href={socialLink.url} target="_blank" rel="noreferrer">
-          <img src={socialLink.icon} alt={`${socialLink.name} icon`} />
+          <SocialIcon src={socialLink.icon} alt={`${socialLink.name} icon`} />
         </a>
       ))}
     </Container>
@@ -44,4 +44,8 @@ const Container = styled.section`
     gap: 4rem;
     padding: 4rem 0;
   }
+`;
+
+const SocialIcon = styled.img`
+  z-index: 1;
 `;

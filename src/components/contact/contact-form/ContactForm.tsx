@@ -85,6 +85,7 @@ const StyledForm = styled.form`
   gap: 3rem;
   width: 75%;
   margin-top: 2rem;
+  z-index: 1;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -96,4 +97,5 @@ const StyledForm = styled.form`
 const StyledButton = styled.button`
   background-color: ${(props) => props.theme.palette.common.green200};
   color: ${(props) => props.theme.palette.common.black};
+  z-index: 1;
 `;

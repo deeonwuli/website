@@ -94,6 +94,7 @@ const StyledProjectText = styled.div`
   flex-direction: column;
   gap: 1rem;
   width: 50%;
+  z-index: 1;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -107,6 +108,7 @@ const StyledDiv = styled.div`
   flex-direction: column;
   width: 50%;
   gap: 1rem;
+  z-index: 1;
 
   @media (max-width: 768px) {
     width: 100%;
