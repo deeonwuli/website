@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npm run build:main && npm run build:scruffKitty && npm run copy:scruffKitty",
+    "build:main": "vite build",
+    "build:scruffKitty": "cd scruffKitty && npm install && vite build",
+    "copy:scruffKitty": "mkdir -p dist/scruffKitty && cp -r scruffKitty/dist/* dist/scruffKitty/",
     "lint": "eslint .",
     "preview": "vite preview"
   },
